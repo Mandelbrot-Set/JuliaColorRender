@@ -12,7 +12,7 @@ c = 0.345 - 0.45j
 # xmin, xmax = (-2.35, 0.85)
 # ymin, ymax = (-1.25, 1.25)
 # c = -0.75 + 0.j
-m = 9
+m = 15
 
 width = 1080
 yrange = np.abs(ymax - ymin)
