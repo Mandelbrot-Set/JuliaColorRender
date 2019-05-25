@@ -29,8 +29,8 @@ im = np.linspace(ym[0], ym[1], h, dtype=np.float64)
 
 
 # 测试Stripe Average Coloring
-# opt.sac_loop(w, h, -2.5, -2.0, 4, 5.0, 500, 3, pix)
-opt.sac_loop(w, h, -0.6966666666666667, 0.42000000000000004, 0.3, 5.0, 500, 0, pix)
+opt.sac_loop(w, h, -2.5, -2.0, 4, 5.0, 500, 0, pix)
+# opt.sac_loop(w, h, -0.6966666666666667, 0.42000000000000004, 0.3, 5.0, 500, 0, pix)
 
 # It's bad so far
 # super_samples = 1
