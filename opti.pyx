@@ -260,7 +260,8 @@ cpdef sac_loop(int w, int h, float xmin, float ymin, float wh, float stripes, in
 
                 mix = frac * orbit_count + (1-frac) * small_count
                 if  np.isnan(mix) or np.isinf(mix):
-                    pix[i, j] = (255, 255, 255)
+                    # pix[i, j] = (255, 255, 255)
+                    pix[i, j] = (255,228,225)
                 else:
                     orbit_color = int(mix*255)
 
