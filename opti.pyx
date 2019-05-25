@@ -35,8 +35,7 @@ cdef t(double minus_real, double minus_imag, double zn_real, double zn_imag, dou
     Mn = abs_minus + abs_const
 
     if (Mn- mn) == 0:
-        print('t-> INFINITY')
-        return 9999999999
+        return np.inf
     else:
         return (abs_zn - mn) / (Mn - mn)
 
@@ -60,7 +59,7 @@ cpdef julia_main(long[:] size, int m, int iterations, int flag, double[:] c_ri, 
 
 @cython.boundscheck(False)
 @cython.wraparound(False)
-cpdef julia_normal(long[:] size, int m, float zoom, int iterations, double[:] c_ri, bitmap):
+cpdef julia_normal(long[:] size, int m, float zoom, int iterations, int color, double[:] c_ri, bitmap):
     cdef:
         float index=0
         int   w=size[0]
@@ -76,11 +75,18 @@ cpdef julia_normal(long[:] size, int m, float zoom, int iterations, double[:] c_
             d = julia_escape_time(complex(zx, zy), complex(c_ri[0], c_ri[1]), iterations, m)
             if  np.isnan(d) or np.isinf(d):
                 d = 0
-            # 白色为主
-            bitmap[x, y] = (int(d*255), int(d*255), int(d*255))
-            # 蓝色为主
-            # bitmap[x, y] = (0, 0, int(d*255))
-
+            if color==0:
+                # 白色为主
+                bitmap[x, y] = (int(d*255), int(d*255), int(d*255))
+            if color==1:
+                # 红色为主
+                bitmap[x, y] = (int(d*255), 0, 0)
+            if color==2:
+                # 绿色为主
+                bitmap[x, y] = (0, int(d*255), 0)
+            if color==3:
+                # 蓝色为主
+                bitmap[x, y] = (0, 0, int(d*255))
 
 cdef float julia_escape_time(complex z, complex c, int iterations, int m):
     cdef:
@@ -134,25 +140,33 @@ cdef double translate(double value, double left_min, double left_max,
 
 @cython.boundscheck(False)
 @cython.wraparound(False)
-cpdef m_loop(int w, int h, xm, ym, int iterations, int m, pix):
+cpdef m_loop(int w, int h, double[:] xaxis, double[:] yaxis, int iterations, int m, int color, pix):
     cdef:
-        int x, y
-        double re, rm
-        float d = 0
+        int x, y, g
+        float d = 0.
 
-    for x in range(w):
-        for y in range(h):
-            # Mandelbrot
-            re = 0.9 * translate(x, 0, w, xm[0], xm[1])
-            im = translate(y, 0, h, ym[1], ym[0])
-            d = mandelbrot(re, im, m, iterations)
+    for row in range(w):
+        for col in range(h):
+            d = mandelbrot(xaxis[row], yaxis[col], m, iterations)
 
-            if  np.isnan(d) or np.isinf(d):
+            if np.isnan(d) or np.isinf(d):
                 d = 0
-            g = int(d*255)
+            g = int(d * 255)
             if g > 255:
                 g = 255
-            pix[x, y] = (g, g, g)
+
+            if color==0:
+                # 白色为主
+                pix[row, col] = (int(d*255), int(d*255), int(d*255))
+            if color==1:
+                # 红色为主
+                pix[row, col] = (int(d*255), 0, 0)
+            if color==2:
+                # 绿色为主
+                pix[row, col] = (0, int(d*255), 0)
+            if color==3:
+                # 蓝色为主
+                pix[row, col] = (0, 0, int(d*255))
 
 cdef float mandelbrot(double creal, double cimag, int m, int maxiter):
     cdef:
@@ -196,11 +210,12 @@ cdef float mandelbrot(double creal, double cimag, int m, int maxiter):
 
     return d * sum1 + (1-d) * sum2
 
+
 # Stripe Average Coloring
 # http://www.fractalforums.com/general-discussion/stripe-average-coloring/
 @cython.boundscheck(False)
 @cython.wraparound(False)
-cpdef sac_loop(int w, int h, float xmin, float ymin, float wh, float stripes, int iterations, pix):
+cpdef sac_loop(int w, int h, float xmin, float ymin, float wh, float stripes, int iterations, int color, pix):
     cdef:
         float xmax = xmin + wh
         float ymax = ymin + wh
@@ -245,12 +260,25 @@ cpdef sac_loop(int w, int h, float xmin, float ymin, float wh, float stripes, in
 
                 mix = frac * orbit_count + (1-frac) * small_count
                 if  np.isnan(mix) or np.isinf(mix):
-                    mix = 255
-                orbit_color = int(mix*255)
+                    pix[i, j] = (255, 255, 255)
+                else:
+                    orbit_color = int(mix*255)
 
-                # pix[i, j] = (orbit_color << 21) + (orbit_color << 10) + orbit_color * 8
-                # pix[i, j] = (0, 0, orbit_color)
-                pix[i, j] = (orbit_color, orbit_color, orbit_color)
+                    # pix[i, j] = (orbit_color << 21) + (orbit_color << 10) + orbit_color * 8
+                    # pix[i, j] = (0, 0, orbit_color)
+                    # pix[i, j] = (orbit_color, orbit_color, orbit_color)
+                    if color==0:
+                        # 白色为主
+                        pix[i, j] = (orbit_color, orbit_color, orbit_color)
+                    if color==1:
+                        # 红色为主
+                        pix[i, j] = (orbit_color, 0, 0)
+                    if color==2:
+                        # 绿色为主
+                        pix[i, j] = (0, orbit_color, 0)
+                    if color==3:
+                        # 蓝色为主
+                        pix[i, j] = (0, 0, orbit_color)
             y += dy
         x += dx
 

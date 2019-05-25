@@ -32,6 +32,25 @@ def get_color(palette):
     return color
 
 
+def get_tac_color(bitmap):
+
+    def color(colour, x, y, d):
+        if colour in ('w', 'W'):
+            # 白色为主
+            bitmap[x, y] = (int(d * 255), int(d * 255), int(d * 255))
+        if colour in ('b', 'B'):
+            # 蓝色为主
+            bitmap[x, y] = (0, 0, int(d * 255))
+        if colour in ('r', 'R'):
+            # 红色为主
+            bitmap[x, y] = (int(d * 255), 0, 0)
+        if colour in ('g', 'G'):
+            # 绿色为主
+            bitmap[x, y] = (int(d * 255), 0, 0)
+
+    return color
+
+
 def get_julia_set_by_count(width, height, c, delta, zoom=1., iterations=255, pixels=None, color_func=None):
     if width > height:
         scale = width / height
