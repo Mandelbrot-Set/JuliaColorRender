@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fda66db-dccc-44e0-baf3-0799cca0e4ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/julia.py" beforeDir="false" afterPath="$PROJECT_DIR$/julia_bitmap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/julia_normal.py" beforeDir="false" afterPath="$PROJECT_DIR$/julia_normal.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,32 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/opti.pyx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/julia_normal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-              <folding>
-                <element signature="e#19#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/julia_bitmap.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+            <state relative-caret-position="232">
+              <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
               <folding>
                 <element signature="e#19#29#0" expanded="true" />
               </folding>
@@ -88,15 +68,17 @@
         <option value="$PROJECT_DIR$/julia_n.py" />
         <option value="$PROJECT_DIR$/opti.pyx" />
         <option value="$PROJECT_DIR$/mandel_cython.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/julia.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/julia_normal.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="409" />
-    <option name="y" value="29" />
+    <option name="x" value="54" />
+    <option name="y" value="23" />
     <option name="width" value="1223" />
     <option name="height" value="844" />
   </component>
@@ -148,7 +130,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.julia">
+  <component name="RunManager" selected="Python.julia_n">
     <configuration name="3.mandel_cython" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="color_for_jm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -261,10 +243,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.julia_n" />
         <item itemvalue="Python.julia" />
         <item itemvalue="Python.3.mandel_cython" />
         <item itemvalue="Python.julia_pil" />
-        <item itemvalue="Python.julia_n" />
         <item itemvalue="Python.Test" />
       </list>
     </recent_temporary>
@@ -290,23 +272,31 @@
       <workItem from="1558736480504" duration="10292000" />
       <workItem from="1558763366019" duration="22000" />
       <workItem from="1558763457341" duration="3898000" />
-      <workItem from="1558780895723" duration="840000" />
+      <workItem from="1558780895723" duration="1856000" />
     </task>
+    <task id="LOCAL-00001" summary="refined">
+      <created>1558782049575</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558782049575</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104814000" />
+    <option name="totallyTimeSpent" value="105830000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="409" y="29" width="1223" height="844" extended-state="0" />
+    <frame x="540" y="82" width="1223" height="844" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24427481" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1331637" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.37991267" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18655692" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18655692" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995128" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -315,7 +305,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50041497" side_tool="true" weight="0.32859176" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49958506" weight="0.31138545" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49958506" weight="0.18792868" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3263434" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -328,9 +318,14 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refined" />
+    <option name="LAST_COMMIT_MESSAGE" value="refined" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mandelbrot_master$opti_pyx.coverage" NAME="opti.pyx Coverage Results" MODIFIED="1558701660457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mandelbrot_master$mandelbrot_gen.coverage" NAME="mandelbrot-gen Coverage Results" MODIFIED="1558513276836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/color_for_jm$julia_n.coverage" NAME="julia_n Coverage Results" MODIFIED="1558782985047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mandelbrot_master$julia_n.coverage" NAME="julia_n Coverage Results" MODIFIED="1558762891986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mandelbrot_master$test.coverage" NAME="test Coverage Results" MODIFIED="1558571355833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mandelbrot_master$julia_pil.coverage" NAME="julia_pil Coverage Results" MODIFIED="1558762918488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -342,13 +337,6 @@
     <SUITE FILE_PATH="coverage/color_for_jm$julia.coverage" NAME="julia Coverage Results" MODIFIED="1558781745657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pictures/2019-05-24-10:54:04.png" />
-    <entry file="file://$PROJECT_DIR$/pictures/2019-05-24-10:50:26.png" />
-    <entry file="file://$PROJECT_DIR$/pictures/2019-05-24-10:48:24.png" />
-    <entry file="file://$PROJECT_DIR$/pictures/2019-05-24-10:41:08.png" />
-    <entry file="file://$PROJECT_DIR$/pictures/2019-05-24-10:40:13.png" />
-    <entry file="file://$PROJECT_DIR$/pictures/2019-05-24-10:34:57.png" />
-    <entry file="file://$PROJECT_DIR$/pictures/2019-05-24-10:30:53.png" />
     <entry file="file://$PROJECT_DIR$/pictures/2019-05-24-10:21:36.png" />
     <entry file="file://$PROJECT_DIR$/pictures/2019-05-24-10:19:59.png" />
     <entry file="file://$PROJECT_DIR$/pictures/2019-05-24-09:18:05.png" />
@@ -382,40 +370,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/julia_pil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding>
-            <element signature="e#19#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/m9.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mandel_cython.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pictures/jn2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/julia_out.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -468,17 +423,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/opti.pyx">
+    <entry file="file://$PROJECT_DIR$/m9.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/julia_pil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        <state relative-caret-position="16">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="e#19#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mandel_cython.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opti.pyx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="81" column="47" lean-forward="true" selection-start-line="81" selection-start-column="47" selection-end-line="81" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/jn1558782463.296056.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/jn1558782491.9250581.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/jn1558782524.772029.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/jn1558782550.581246.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/jn1558782597.151283.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/julia_out.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/jn1558782619.6422641.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/julia_normal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="232">
+          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
           <folding>
             <element signature="e#19#29#0" expanded="true" />
           </folding>
