@@ -3,4 +3,8 @@ Julia and Mandelbrot set image generator, featuring implementation of an amazing
 ## Example image
 ![Julia set image 0](/pictures/julia_out.png "")
 
+SAC 
+
+![Julia set image 1](/pictures/mandel_sac.png "")
+
 ![Julia set image 1](/pictures/example.png "")
