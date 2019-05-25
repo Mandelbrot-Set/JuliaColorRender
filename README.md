@@ -8,6 +8,8 @@ Triangle Inequality Average method for colouring fractals (TAC)
 
 Stripe Average Coloring (SAC)
 
-![Julia set image 1](/pictures/mandel_sac.png "")
+![Mandelbrot image 1](/pictures/mandel_sac.png "")
 
-![Julia set image 1](/pictures/example.png "")
+![Mandelbrot image 2](/pictures/mandel_sac1.png "")
+
+![Mandelbrot image 3](/pictures/example.png "")
