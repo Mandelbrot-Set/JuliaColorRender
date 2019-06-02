@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
     cc = np.array([c.real, c.imag])
     size = np.array([width, height])
-    opt.julia_main(size, m, ITER_NUM, 2, cc, xaxis, yaxis, bitmap)
+    opt.julia_main(size, m, ITER_NUM, 0, cc, xaxis, yaxis, bitmap)
 
     print("执行时间 {} 秒".format(round(time.time() - start_time, 2)))
 
